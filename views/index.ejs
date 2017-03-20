@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CRUD</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>CRUD: It's What's for dinner.</h1>
+        <ul class="quotes">
+            <% for(var i=0; i<quotes.length; i++) {%>
+            <li class="quote">
+                <span><%= quotes[i].name + " said: "%></span>
+                <span><%= "'" + quotes[i].quote + "'" %></span>
+                <div class="trash"></div>
+            </li>
+            <% } %>
+            </ul>
+            <form action="/quotes" method="POST">
+                <input type="text" placeholder="name" name="name">
+                <input type="text" placeholder="quote" name="quote">
+                <button class="btn btn-1" type="submit">Submit</button>
+            </form>
+            <div>
+                <h2>Replace last quote written by Master Yoda with a quote written by Darth Vadar</h2>
+                <button id="vader"> Darth Vadar invades! </button>
+            </div>
+            <div>
+                <h2>Delete Darth Vadar's first quote</h2>
+                <button id="delete"> Delete first Darth Vadar quote </button>
+                <button id="can"> experiment </button>
+            </div>
+            <script src="main.js"></script>
+        </body>
+    </html>

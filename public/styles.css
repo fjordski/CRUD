@@ -1,0 +1,85 @@
+body {
+    background-color: lightgrey;
+    font-family: monospace;
+    font-size: 2em;
+
+    margin: 2em;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin: 0;
+    margin-bottom: 1em;
+    padding-left: 1.5em;
+    position: relative;
+}
+ul li:after {
+    content: '';
+    height: .4em;
+    width: .4em;
+    background: #D2153A;
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    top: .25em;
+    left: 0;
+}
+
+.trash {
+    content: 'del';
+    background-color: red;
+    height: 10px;
+    max-width: 10px;
+    transition: .3s;
+}
+
+.trash:hover {
+    background-color: blue;
+    transition: .3s;
+}
+
+.btn {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/* Button 1 */
+.btn-1 {
+    border: 3px solid #fff;
+    color: #fff;
+    backround-color: black;
+}
+
+.btn-1:hover,
+.btn-1:active {
+    color: #000;
+    background: #fff;
+}
+
