@@ -1,2 +1,2 @@
 # CRUD-app
-Basic Get, Post, Put CRUD app.  Currently developing the delete functionality.
+Basic Get, Post, Put CRUD app.  Uses ExpressJS, MongoDB, and Node.  Currently developing the delete functionality.
